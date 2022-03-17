@@ -161,7 +161,7 @@ a:active {
 }
 
 .hero img {
-    width: 71.01rem;
+
     padding-top: 10rem;
 }
 
@@ -453,8 +453,8 @@ a:active {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
 
     /* identical to box height */
     display: flex;
@@ -469,12 +469,43 @@ a:active {
 
 .brand-wrapper {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    max-width: 1200px;
-    margin: auto;
-    padding-bottom: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    row-gap: 2rem;
+
 }
 
-.brand-card{
-    
+.brand-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem;
+    width: 23rem;
+    cursor: pointer;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0rem 2.2rem;
+
+    border-radius: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: all 400ms ease;
+    transition: all 500ms ease;
+}
+
+.brand-card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.6rem;
+}
+
+.brand-card:hover {
+    /* border: 1px solid var(--primary-color); */
+    transform: translate(0px, -5px);
+    scale: 105%;
+    box-shadow: 11px 11px 70px 35px rgba(206, 212, 224, 0.198);
 }
