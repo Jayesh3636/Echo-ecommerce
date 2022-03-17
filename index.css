@@ -423,7 +423,7 @@ a:active {
     margin-top: 9.8rem;
 }
 
-.brands-caption {
+.brands-title {
     /* The Latest Brands */
     font-family: 'Poppins';
     font-style: normal;
@@ -444,7 +444,7 @@ a:active {
     margin: 4rem 0rem;
 }
 
-.brands-caption .blue-text {
+.brands-title .blue-text {
     font-weight: 600;
 }
 
