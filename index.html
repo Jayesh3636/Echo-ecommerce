@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="index.css">
     <title>Echo</title>
-    <link rel="icon" href="./images/echo-logo.png">
+    <link rel="icon" href="./images/icon.png">
+
 </head>
 
 <body>
+
+
     <!-- header consist only nav bar-->
     <header class="header" id="header">
         <nav class="navbar nav-container">
@@ -23,10 +26,26 @@
 
             <ul class="right-menu-set">
                 <div class="navbar-links-item">
-                    <a class="navbar-links-atag" href="#header">
+                    <a class="navbar-links-atag ex-modal-CTA" href="#header">
                         <span class="nav-icons-small">
                             <img src="./images/search-icon.png" alt="">
                     </a>
+                    <div class="modal dn ex-modal">
+                        <div class="modal-content-nm vm display-flex-items search-modal">
+                            <button type="button" class="btn-close modal-cl ex-modal-cl"></button>
+                            <div class="search-menu ">
+                                <div class="search-cat "><button class="search-cat-button para-sm">All Categories<span
+                                            class="material-icons-round">
+                                            arrow_drop_down
+                                        </span></button></div>
+                                <div class="search-bar para-rg">
+                                    <input type="text" class="search-box" autofocus="" placeholder="Search anything">
+                                </div>
+
+                                <button class="search-button para-rg">Search</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="navbar-links-item">
                     <a class="navbar-links-atag" href="#header">
@@ -137,7 +156,7 @@
 
         <section class="categories" id="categories">
 
-            <div class="cat-caption">
+            <div class="mid-title">
                 A range of <span class="blue-text">Categories</span>
             </div>
 
@@ -197,8 +216,8 @@
 
         <section class="brands" id="Brands">
 
-            <div class="brands-title">
-                <div class="small-text-shop">
+            <div class="mid-title">
+                <div class="mid-small-title">
                     Shop
                 </div>
                 The Latest <span class="blue-text">Brands</span>
@@ -259,15 +278,263 @@
                     </div>
                 </div>
             </div>
-            <div class="small-text-shop">
+            <div class="mid-small-title">
                 See more
+            </div>
+        </section>
+
+        <section class="best-seller">
+
+            <div class="mid-title">
+                The <span class="blue-text">Best Sellers</span>
+            </div>
+            <div class="best-seller-cards-contianer">
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="./images/categories/on-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite_border
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10%
+                                </div>
+                                <div class="mrp-price">
+                                    $24500
+                                </div>
+                                <div class="selling-price">
+                                    $12000
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="./images/categories/on-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite_border
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10%
+                                </div>
+                                <div class="mrp-price">
+                                    $24500
+                                </div>
+                                <div class="selling-price">
+                                    $12000
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart margin-0">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="./images/categories/on-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite_border
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10%
+                                </div>
+                                <div class="mrp-price">
+                                    $24500
+                                </div>
+                                <div class="selling-price">
+                                    $12000
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <ul class="footer-col-title">
+                        <li class="footer-title">
+                            <h5>About Headphones</h5>
+                        </li>
+                        <li class="footers-list-item para-rg">There are many variations of passage of lorem ipsum
+                            available, but the majority have suffer alterat in some form by injected humour. </li>
+                        <li class="footers-post-script-font">CONNECT US ON
+                            <div class="social-media-handle">
 
-    </footer>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-col-title">
+                        <li class="footer-title">
+                            <h5>Company</h5>
+                        </li>
+                        <li class="footers-list-item">About echo </li>
+                        <li class="footers-list-item">My Account </li>
+                        <li class="footers-list-item">Contact </li>
+                        <li class="footers-list-item">Latest News </li>
+                        <li class="footers-list-item">Help & FAQ's</li>
+                        <li class="footers-list-item">Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-col-title">
+                        <li class="footer-title">
+                            <h5>Links</h5>
+                        </li>
+                        <li class="footers-list-item"> Shop Products </li>
+                        <li class="footers-list-item">My Cart </li>
+                        <li class="footers-list-item">Checkout </li>
+                        <li class="footers-list-item"> Order Tracking </li>
+                        <li class="footers-list-item">Contact </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-col-title">
+                        <li class="footer-title">
+                            <h5>Contact</h5>
+                        </li>
+                        <li class="footers-sub-title">
+                            Phone
+                            <p class="footer-subtitle-caption">+91 23456 78925</p>
+                        </li>
+                        <li class="footers-sub-title">Address
+                            <p class="footer-subtitle-caption"> 880 Brooklyn Street
+                                New York, USA</p>
+                        </li>
+                        <li class="footers-sub-title">Email
+                            <p class="footer-subtitle-caption"> help@yourcompany.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer> -->
+    <script src="./scripts/modal.js"></script>
+
 
 
 </body>

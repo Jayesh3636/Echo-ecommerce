@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -10,6 +14,97 @@ a:visited,
 a:hover,
 a:active {
     color: inherit;
+}
+
+.search-menu {
+    height: 56px;
+    white-space: nowrap;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: var(--search-bg-color);
+    border-radius: 1.6rem;
+    width: 100%;
+    max-width: 62.5rem;
+    padding-left: 2rem;
+    margin: 0 auto;
+}
+
+.search-bar {
+    height: 55px;
+    width: 100%;
+    position: relative;
+
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    background-position: 0 50%;
+    padding: 0 25px 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    margin: 0;
+
+    overflow: visible;
+}
+
+
+.search-cat-button {
+    background-color: var(--search-bg-color);
+    height: 55px;
+    border: none;
+    font-weight: 600;
+
+
+    border-radius: 0 1.6rem 1.6rem 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-left: auto;
+    -webkit-appearance: button;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.search-button {
+    background-color: var(--search-bg-color);
+    height: 55px;
+    border: none;
+    font-weight: 500;
+
+    padding: 0 2.5rem;
+    border-radius: 0 1.6rem 1.6rem 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-left: auto;
+    -webkit-appearance: button;
+    text-transform: none;
+    transition: all ease-in-out 150ms;
+}
+
+.search-button:hover {
+    background-color: var(--primary-color);
+    color: var(--search-bg-color);
+
+}
+
+.search-modal {
+    max-width: 745px;
+    background-color: #fff;
+    padding: 85px 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px -7.5px #5b5b5b;
+    box-sizing: border-box;
 }
 
 .header {
@@ -423,7 +518,7 @@ a:active {
     margin-top: 9.8rem;
 }
 
-.brands-title {
+.mid-title {
     /* The Latest Brands */
     font-family: 'Poppins';
     font-style: normal;
@@ -444,11 +539,11 @@ a:active {
     margin: 4rem 0rem;
 }
 
-.brands-title .blue-text {
+.mid-title .blue-text {
     font-weight: 600;
 }
 
-.small-text-shop {
+.mid-small-title {
 
     font-family: 'Poppins';
     font-style: normal;
@@ -508,4 +603,225 @@ a:active {
     transform: translate(0px, -5px);
     scale: 105%;
     box-shadow: 11px 11px 70px 35px rgba(206, 212, 224, 0.198);
+}
+
+.footer p,
+h5,
+.footer-title,
+.footers-sub-title {
+    font-family: 'Poppins';
+    color: var(--white);
+}
+
+.footer-background {
+    background-color: var(--primary-color);
+    height: 306px;
+
+}
+
+.footer-content {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.0rem;
+    margin-top: 9.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footers-list-item {}
+
+.footer-title,
+.footers-sub-title,
+.footers-list-item {
+    list-style: none;
+}
+
+
+
+/* card component design */
+.best-seller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.best-seller-cards-contianer {
+    display: flex;
+    justify-content: center;
+}
+
+.card-comp {
+    display: flex;
+    padding: 2rem 5rem;
+}
+
+.card-content {
+    width: 306px;
+    height: 496px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 12rem rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 1rem;
+
+}
+
+.product-image img {
+    width: 100%;
+    height: 28.7rem;
+    padding: 2rem;
+
+}
+
+.card-title {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+    margin: 0px 10px;
+}
+
+.card-sub-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 2rem;
+
+    /* identical to box height */
+    letter-spacing: -0.03em;
+    max-width: 22rem;
+    color: #000000;
+    text-align: left;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 10px;
+}
+
+.ratings {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+}
+
+.rating-card-comp-ps {
+    position: absolute;
+    bottom: 1.6rem;
+    right: -1rem;
+  }
+
+.wishlist-icon {
+    /* Wishlist-icon */
+
+    /* Auto layout */
+    position: absolute;
+
+    left: -46px;
+    top: -290px;
+}
+
+.price-and-cta-container {
+    
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+
+}
+
+.prices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+
+}
+
+.discount {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.03em;
+
+    /* main blue color */
+    color: var(--primary-color);
+}
+
+.mrp-price {
+
+    width: 46px;
+    height: 2rem;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.03em;
+    text-decoration-line: line-through;
+
+    color: #000000;
+}
+
+.selling-price {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+}
+
+.CTA-container {
+    display: flex;
+    
+}
+
+.margin-0 {
+    margin: 0;
 }

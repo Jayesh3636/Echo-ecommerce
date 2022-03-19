@@ -1,16 +1,22 @@
-:root{
+* {
+    outline: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgb(255, 255, 255);
+}
+
+
+:root {
     --primary-color-when-hovered: #277ff21e;
     --logo-typo-gradident: linear-gradient(90.91deg, #2780F2 35.73%, #00ADEE 113.57%);
     --hr: #e4e4e438;
-    --main-color-black:#1B1B1B;
-
+    --main-color-black: #1B1B1B;
+    --search-bg-color: #FBFBFB;
 }
 
-body{
+body {
     background: none;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
 }
-
