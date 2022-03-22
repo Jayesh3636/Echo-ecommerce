@@ -206,6 +206,50 @@ a:active {
     display: none;
 }
 
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .profile-drop-down {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 4px 16px 34px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    right:.4rem;
+    border-radius: 12px;
+  }
+  
+  .dropdown-content a { 
+    color: var(--dark-primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;    
+    opacity: .85;
+  }
+
+  .dropdown-content .material-icons-round{
+padding-right: .5rem;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(250, 250, 250); color: var(--primary-color);}
+  
+  .profile-drop-down:hover .dropdown-content {display: block;}
+  
+  
+
 .hr {
 
     height: .2rem;
@@ -775,18 +819,24 @@ padding-top: 0;
     bottom: 1.6rem;
     right: -1rem;
 }
+.wishlist-icon .material-icons-outlined{
+    color: var(--primary-color);
+}
 
 .wishlist-icon {
     /* Wishlist-icon */
 
     /* Auto layout */
     position: absolute;
-
+color: var(--primary-color);
+opacity: .3;
     left: -46px;
     top: -290px;
+    transition: all ease-in-out 150ms;
 }
 
-.wishlist-icon:hover .material-icons-outlined{
+.wishlist-icon:hover{
+    opacity: 1;
 
 }
 .price-and-cta-container {
@@ -872,4 +922,17 @@ padding-top: 0;
 
 .margin-0 {
     margin: 0;
+}
+
+
+
+
+
+
+/* Just a atomic CSS */
+.display-flex{
+    display: flex;
+}
+.display-block{
+    display: block;
 }
