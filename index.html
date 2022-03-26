@@ -14,8 +14,6 @@
 </head>
 
 <body>
-
-
     <!-- header consist only nav bar-->
     <header class="header" id="header">
         <nav class="navbar nav-container">
@@ -54,28 +52,30 @@
                     </a>
                     </a>
                 </div>
-                <div class="navbar-links-item profile-drop-down">
-                    <a class="navbar-links-atag-profile dropbtn" href="#header">
-                        <div class="avatar avatar-sm nav-profile-height">
-                            <img class="img-rnd img-resp" src="./images/avatar_2.jpg" alt="avatar img"></div>
+                <div class="navbar-links-item ">
+                    <a class="navbar-links-atag-profile" href="#header">
+                        <button id="loginModalCTABtn" class="btn btn-solid-primary para-rg">
+                            Login/Register
+                        </button>
+                        <!-- <div class="avatar avatar-sm nav-profile-height">
+                            <img class="img-rnd img-resp" src="./images/avatar_2.jpg" alt="avatar img"></div> -->
                     </a>
                     <div class="dropdown-content">
                         <a href="#" class="para-sm"><span class="material-icons-round">
-                            person
+                                person
                             </span>My Profile</a>
-                        <a href="#" class="para-sm"><span class="material-icons-round">
-                            redeem
+                        <a href="#" class="para-sm"><img src="./images/Open Parcel.png" class="material-icons-round">
                             </span>Orders</a>
                         <a href="#" class="para-sm"><span class="material-icons-round">
-                            favorite
+                                favorite
                             </span>Wishlist</a>
                         <a href="#" class="para-sm"><span class="material-icons-round">
-                            notifications
+                                notifications
                             </span>Notification</a>
                         <a href="#" class="para-sm"><span class="material-icons-round">
-                            logout
+                                logout
                             </span>Logout</a>
-                      </div>
+                    </div>
                 </div>
                 </div>
             </ul>
@@ -90,7 +90,100 @@
         </nav>
     </header>
     <div class="hr"></div>
+    <div class="modal vm dn " id="login">
+        <div class="modal-content-nm vm display-flex-items login-modal">
+            <button type="button" class="btn-close modal-cl" id="loginCloseBtn"></button>
+            <div class="text-container  ">
+                <div class="text-container-title text-center">
+                    <h2>Login</h2>
+                </div>
+                <div class="login-inputs vm ">
+                    <div class="login-input-email">
+                        <Label for="username" class="login-title-for-input para-sm ">
+                            Email</Label>
+                        <input type="text" class="username-field flex-items" name="username"
+                            placeholder="Email or Username">
+                    </div>
 
+                    <div class="login-input-password"><Label for="password"
+                            class="login-title-for-input para-sm ">Password</Label>
+                        <input type="password" class="username-field flex-items" name="password" placeholder="****">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="hyperlink para-sm ">Forgot password?</a>
+                </div>
+                <div class="CTA-Container vm">
+                    <a id="loginBtn" class="btn btn-solid-primary" href="#" target="_blank">
+                        Login</a>
+                </div>
+
+                <div class="text-center margin-top">
+                    <p class="para-sm">Dont have an account?
+                        <a id="wantToRegister" href="#" class="blue-text hyperlink para-sm  "> Sign up </a></p>
+                </div>
+                <p class="para-rg text-center">OR</p>
+                <p class="para-sm text-center">Connect with</p>
+
+                <button class="btn btn-text-icon-secondary google-btn vm align-self-center "><img
+                        src="./images/google-icon-2.png" class="material-icons vm">Google</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal vm dn" id="register">
+        <div class="modal-content-nm vm display-flex-items register-modal">
+            <button type="button" class="btn-close modal-cl" id="registerCloseBtn"></button>
+            <div class="text-container  ">
+                <div class="text-container-title text-center">
+                    <h2>Register</h2>
+                </div>
+                <div class="login-inputs vm ">
+                    <div class="login-input-email">
+                        <Label for="username" class="login-title-for-input para-sm ">
+                            Email</Label>
+                        <input type="text" class="username-field flex-items" name="username"
+                            placeholder="Email or Username">
+                    </div>
+
+                    <div class="login-input-password">
+                        <Label for="password" class="login-title-for-input para-sm ">Password</Label>
+                        <input type="password" class="username-field flex-items" name="password" placeholder="****">
+                    </div>
+
+                    <div class="login-input-phone">
+                        <Label for="username" class="login-title-for-input para-sm ">
+                            Mobile number</Label>
+                        <input type="number" class="username-field flex-items" name="username" placeholder="Number  ">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="hyperlink para-sm ">
+                        <div class="display-flex">
+                            <input class="form-checkbox-field" type="checkbox" name="gender" value="F" id="female">
+                            <label for="female" class="label para-sm">I agree to terms and condition of
+                                echo</label>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="CTA-Container vm">
+                    <a class="btn btn-solid-primary" href="#" target="_blank">
+                        Register</a>
+                </div>
+
+                <div class="text-center margin-top">
+                    <p class="para-sm">Already have an account?
+                        <a id="userAlready" href="#" class="blue-text hyperlink para-sm  "> Login </a></p>
+                </div>
+                <p class="para-rg text-center">OR</p>
+                <p class="para-sm text-center">Connect with</p>
+
+                <button class="btn btn-text-icon-secondary google-btn vm align-self-center "><img
+                        src="./images/google-icon-2.png" class="material-icons vm">Google</button>
+            </div>
+        </div>
+    </div>
     <main>
         <br>
         <div class="secondary-navbar">
@@ -193,7 +286,7 @@
                         <img src="./images/categories/over-ear.png" alt="on-ear-headphones-image">
                     </div>
                     <div class="cat-card-caption">
-                        Over-Ear Headphones
+                        Over-Ear Headphonesrem
                     </div>
                     <div class="cat-card-seemore"><a class="link-text flex-items link-text-primary">See more</a></div>
                 </div>
@@ -318,8 +411,7 @@
                                 </div>
                                 <div class="wishlist-icon ">
                                     <button class="btn flex-items btn-icon-primary">
-                                        <span
-                                            class="material-icons-outlined" id="fav-icon">
+                                        <span class="material-icons-outlined" id="fav-icon">
                                             favorite
                                         </span></button>
                                 </div>
@@ -568,8 +660,8 @@
 
     </footer>
     <script src="./scripts/modal.js"></script>
-    <script src="./scripts/wishlist-js.js"></script>
-
+    <script src="./scripts/Login-register-modal.js"></script>
+    <script src="./scripts/register-modal.js"></script>
 
 
 </body>

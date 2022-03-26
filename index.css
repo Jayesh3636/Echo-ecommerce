@@ -207,48 +207,53 @@ a:active {
 }
 
 .dropbtn {
-    
+
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-  
-  .profile-drop-down {
+}
+
+.profile-drop-down {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--white);
     min-width: 160px;
-    box-shadow: 4px 16px 34px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 16px 34px 0px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    right:.4rem;
+    right: .4rem;
     border-radius: 12px;
-  }
-  
-  .dropdown-content a { 
+}
+
+.dropdown-content a {
     color: var(--dark-primary-color);
     padding: 12px 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    border-radius: 12px;    
+    border-radius: 12px;
     opacity: .85;
-  }
+}
 
-  .dropdown-content .material-icons-round{
-padding-right: .5rem;
-  }
-  
-  .dropdown-content a:hover {background-color: rgb(250, 250, 250); color: var(--primary-color);}
-  
-  .profile-drop-down:hover .dropdown-content {display: block;}
-  
-  
+.dropdown-content .material-icons-round {
+    padding-right: .5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(250, 250, 250);
+    color: var(--primary-color);
+}
+
+.profile-drop-down:hover .dropdown-content {
+    display: block;
+}
+
+
 
 .hr {
 
@@ -650,7 +655,7 @@ padding-right: .5rem;
 }
 
 
-.footer-col{
+.footer-col {
     padding-top: 2rem;
 }
 
@@ -672,7 +677,7 @@ h5,
     max-width: 130rem;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 2.0rem;
     margin-top: 9.8rem;
     margin-left: auto;
@@ -685,7 +690,7 @@ h5,
     font-weight: 200;
 }
 
-.text-capitalise{
+.text-capitalise {
     text-transform: capitalize;
 }
 
@@ -695,14 +700,14 @@ h5,
     text-align: justify;
 }
 
-.social-media-handle{
+.social-media-handle {
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.footer-icon{
-    padding-right:1rem;
+.footer-icon {
+    padding-right: 1rem;
 }
 
 .footer-title,
@@ -710,20 +715,22 @@ h5,
 .footers-list-item {
     list-style: none;
 }
-.footer-title{
+
+.footer-title {
     text-transform: uppercase;
 }
-.footers-sub-title{
+
+.footers-sub-title {
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.footers-sub-title p{
-margin-top: 0;
-padding-top: 0;
+.footers-sub-title p {
+    margin-top: 0;
+    padding-top: 0;
 }
 
-.footer-subtitle-caption{
+.footer-subtitle-caption {
     font-weight: 200;
 }
 
@@ -819,7 +826,8 @@ padding-top: 0;
     bottom: 1.6rem;
     right: -1rem;
 }
-.wishlist-icon .material-icons-outlined{
+
+.wishlist-icon .material-icons-outlined {
     color: var(--primary-color);
 }
 
@@ -828,17 +836,18 @@ padding-top: 0;
 
     /* Auto layout */
     position: absolute;
-color: var(--primary-color);
-opacity: .3;
+    color: var(--primary-color);
+    opacity: .3;
     left: -46px;
     top: -290px;
     transition: all ease-in-out 150ms;
 }
 
-.wishlist-icon:hover{
+.wishlist-icon:hover {
     opacity: 1;
 
 }
+
 .price-and-cta-container {
 
     padding-right: 1rem;
@@ -924,15 +933,102 @@ opacity: .3;
     margin: 0;
 }
 
+/* Login modal */
+.login-modal {
+    background-color: var(--white);
+    width: 30rem;
+    overflow-x: hidden;
+    align-self: center;
+    box-shadow: 0px 0px 12rem rgba(0, 0, 0, 0.1)
+}
 
+.login-modal h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
 
+.login-inputs,
+.login-input-email,
+.login-input-password {
+    display: flex;
+    flex-direction: column;
 
+}
 
+.login-title-for-input {
+    margin: 0 1.6rem;
+}
+
+.username-field {
+    height: 3.5rem;
+    border: 0;
+    border-radius: 1.2rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    max-width: 36rem;
+    background-color: rgb(250, 250, 250);
+}
+
+.google-btn {
+    background-color: rgb(250, 250, 250);
+    color: #2780F2;
+    width: 10rem;
+}
+
+.google-btn:hover {
+    background-color: var(--white);
+}
+
+/* signup modal */
+
+.register-modal {
+    background-color: var(--white);
+    width: 30rem;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 12rem rgba(0, 0, 0, 0.1)
+}
+
+.register-modal h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
 
 /* Just a atomic CSS */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.display-block{
+
+.display-block {
     display: block;
+}
+
+.hyperlink {
+    color: inherit;
+}
+
+.hyperlink:hover {
+
+    color: var(--primary-color);
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.align-self-center {
+    align-self: center;
 }
