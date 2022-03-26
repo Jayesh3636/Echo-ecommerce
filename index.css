@@ -688,7 +688,10 @@ h5,
     font-family: inherit;
     color: rgb(246, 246, 246);
     font-weight: 200;
+    cursor: pointer;
 }
+
+
 
 .text-capitalise {
     text-transform: capitalize;
@@ -714,6 +717,7 @@ h5,
 .footers-sub-title,
 .footers-list-item {
     list-style: none;
+
 }
 
 .footer-title {
@@ -996,7 +1000,14 @@ h5,
 }
 
 /* Just a atomic CSS */
-.display-flex ,.df{
+.blue-color{
+    color: var(--primary-color);
+}
+.white-color{
+    color: var(--white);
+}
+
+.display-flex , .df{
     display: flex;
 }
 
