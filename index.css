@@ -996,11 +996,11 @@ h5,
 }
 
 /* Just a atomic CSS */
-.display-flex {
+.display-flex ,.df{
     display: flex;
 }
 
-.display-block {
+.display-block , .db{
     display: block;
 }
 

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://darkbucket.netlify.app/components/third-party.css">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./productPage.css">
+    <link rel="icon" href="../../images/echo-logo.png">
+    <title>Echo | Products</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- header consist only nav bar-->
+        <header class="header" id="header">
+            <nav class="navbar nav-container">
+                <div class="logo">
+                    <img src="../../images/echo-logo.png" class="logo-image" alt="Echo-logo">
+                    <div class="title-logo-typo ">echo</div>
+                </div>
+
+                <ul class="right-menu-set">
+                    <div class="navbar-links-item">
+                        <a class="navbar-links-atag" href="#header">
+                            <span class="nav-icons-small">
+                                <img src="../../images/search-icon.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navbar-links-item">
+                        <a class="navbar-links-atag" href="#header">
+                            <span class="nav-icons-small">
+                                <img src="../../images/cart-icon.png" alt="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="navbar-links-item profile-drop-down">
+                        <a class="navbar-links-atag-profile dropbtn" href="#header">
+                            <div class="avatar avatar-sm nav-profile-height ">
+                                <img class="img-rnd img-resp" src="../images/avatar_2.jpg" alt="avatar img"></div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="para-sm"><span class="material-icons-round">
+                                    person
+                                </span>My Profile</a>
+                            <a href="#" class="para-sm"><img src="../images/Open Parcel.png"
+                                    class="material-icons-round">
+                                </span>Orders</a>
+                            <a href="#" class="para-sm"><span class="material-icons-round">
+                                    favorite
+                                </span>Wishlist</a>
+                            <a href="#" class="para-sm"><span class="material-icons-round">
+                                    notifications
+                                </span>Notification</a>
+                            <a href="#" class="para-sm"><span class="material-icons-round">
+                                    logout
+                                </span>Logout</a>
+                        </div>
+                    </div>
+                </ul>
+
+                <!-- hamburger menu -->
+                <div class="hamburger">
+                    <span class="ham-bar"></span>
+                    <span class="ham-bar"></span>
+                    <span class="ham-bar"></span>
+                </div>
+            </nav>
+            <div class="hr"></div><br>
+            <div class="secondary-navbar">
+                <ul class="secondary-nav">
+                    <li class="secondary-nav-item">
+                        <a href="#header" class="para-rg">Home</a>
+                    </li>
+                    <li class="secondary-nav-item">
+                        <a href="#header" class="para-rg text-underline text-bold-weight">Shop</a>
+                    </li>
+                    <li class="secondary-nav-item">
+                        <a href="#header" class="para-rg">Gifting</a>
+                    </li>
+                    <li class="secondary-nav-item">
+                        <a href="#header" class="para-rg">Offer Zone</a>
+                    </li>
+                    <li class="secondary-nav-item">
+                        <a href="#header" class="para-rg">About</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <!-- Filter section -->
+        <section class="filter dn" id="sidebar">
+
+            <button id="filterbackBtn" class="btn  btn-icon-primary">
+                <span class="material-icons">
+                    arrow_back
+                </span>
+            </button>
+
+            <div class="title">
+                <div class="title-heading">Filters</div>
+                <div class="title-left">Clear All</div>
+            </div>
+
+            <div class="subtitles">
+                <!-- price -->
+                <div class="subtitle-price">
+                    <div class="subtitle">PRICE</div>
+                    <div class="slider-container range-slider">
+                        <div>
+                            <span class="price-range-selected para-rg">5,000</span>
+
+                            <div class="price-tags">
+                                <div class="RS-small-label-l">₹0</div>
+                                <div class="RS-small-label-r">₹10,000</div>
+                            </div>
+
+                            <input id="demo" type="range" step="500" min="0" max="75000"
+                                style="background: var(--primary-color) repeat scroll 0% 0%;">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- categories -->
+                <div class="subtitle-categories">
+                    <div class="subtitle">CATEGORIES</div>
+                    <div class="catergories">
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="on-ear-headphones">
+                            <span class="items">On-Ear Headphones</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="over-ear-headphones">
+                            <span class="items">Over-Ear Headphones</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="in-ear-headphones">
+                            <span class="items">In-Ear Headphones</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="collar-headphones-bt">
+                            <span class="items">Collar Headphones (BT)</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="tw-headphones">
+                            <span class="items">True-Wirless Headphones</span>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- brands -->
+                <div class="subtitle-brands">
+                    <div class="subtitle">BRANDS</div>
+                    <div class="catergories">
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="sony">
+                            <span class="items">SONY</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="bose">
+                            <span class="items">BOSE</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="sennheiser">
+                            <span class="items">SENNHEISER</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="akg">
+                            <span class="items">AKG-HARMAN</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="steel-series">
+                            <span class="items">STEEL-SERIES</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="audio-technica">
+                            <span class="items">AUDIO-TECHNICA</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="jbl">
+                            <span class="items">JBL</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="mivi">
+                            <span class="items">MIVI</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="beyerdynamic">
+                            <span class="items">BEYERDYNAMIC</span>
+                        </article>
+
+                        <article>
+                            <input type="checkbox" class="checkbox-inp" value="skullcandy">
+                            <span class="items">SKULLCANDY</span>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- ratings -->
+                <div class="subtitle-ratings">
+                    <div class="subtitle">RATINGS</div>
+                    <div class="rating">
+
+                        <article>
+                            <input type="radio" class="radio-inp" value="4star" name="rating">
+                            <span class="items">4 Stars & above</span>
+                        </article>
+
+                        <article>
+                            <input type="radio" class="radio-inp" value="3star" name="rating">
+                            <span class="items">3 Stars & above</span>
+                        </article>
+
+                        <article>
+                            <input type="radio" class="radio-inp" value="2star" name="rating">
+                            <span class="items">2 Stars & above</span>
+                        </article>
+
+                        <article>
+                            <input type="radio" class="radio-inp" value="1star" name="rating">
+                            <span class="items">1 Stars & above</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Cards -->
+        <section class="product-cards-container">
+
+            <div class="search-menu ">
+                <div class="search-cat "><button class="search-cat-button para-sm">All Categories<span
+                            class="material-icons-round">
+                            arrow_drop_down
+                        </span></button></div>
+                <div class="search-bar para-rg">
+                    <input type="text" class="search-box" autofocus="" placeholder="Search anything">
+                </div>
+
+                <button class="search-button para-rg">Search</button>
+            </div>
+            <button class="btn flex-items btn-solid-primary filters-cta-button" id="filters-cta-button">
+                Filters
+            </button>
+            <div class="products-card vm ">
+                <!-- card 1 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/on-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/in-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/over-ear.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/collar.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/TW.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card 6 -->
+                <div class="card-comp">
+                    <div class="card-content">
+                        <div class="product-image image-container badge-container">
+                            <img class="imp-resp card-img" src="../../images/categories/TW.png" alt="">
+                            <div class="ratings">
+                                <div class="rating-badge-2 rating-card-comp-ps">
+                                    <span class="material-icons-round rating-star-icon rating-active-color"> star
+                                    </span>
+                                    <span class="rating-badge-number">3</span>
+                                </div>
+                                <div class="wishlist-icon">
+                                    <button class="btn flex-items btn-icon-primary"><span
+                                            class="material-icons-outlined">
+                                            favorite
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <div class="card-title">
+                                Boat Rockers 370
+                            </div>
+                            <div class="card-sub-title">
+                                Boat | On-Ear Headphones
+                                Boat | On-Ear HeadphonesBoat
+                            </div>
+                        </div>
+                        <div class="price-and-cta-container">
+                            <div class="prices-container">
+                                <div class="discount">
+                                    10% OFF
+                                </div>
+                                <div class="mrp-price">
+                                    ₹24,000
+                                </div>
+                                <div class="selling-price">
+                                    ₹21,600
+                                </div>
+                            </div>
+
+                            <div class="CTA-container">
+                                <div class="CTA-add-to-cart">
+                                    <button class="btn btn-icon-primary margin-0"><span class="material-icons">
+                                            shopping_cart
+                                        </span></button>
+                                </div>
+                                <div class="CTA-buynow">
+                                    <button class="btn btn-solid-primary margin-0">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="./filters.js"></script>
+</body>
+
+</html>
