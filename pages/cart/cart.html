@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://darkbucket.netlify.app/components/third-party.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="icon" href="/images/icon.png" />
+    <title>echo | cart</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar nav-container">
+            <div class="logo">
+                <img src="/images/echo-logo.png" class="logo-image" alt="Echo-logo">
+                <div class="title-logo-typo ">echo</div>
+            </div>
+
+            <ul class="right-menu-set">
+                <div class="navbar-links-item">
+                    <a class="navbar-links-atag" href="#header">
+                        <span class="nav-icons-small">
+                            <img src="/images/search-icon.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar-links-item">
+                    <a class="navbar-links-atag" href="#header" onclick="openNav()">
+                        <span class="nav-icons-small">
+                            <img src="/images/cart-icon.png" alt="">
+                    </a>
+                    </a>
+                </div>
+                <div class="navbar-links-item">
+                    <a class="navbar-links-atag-profile" href="#header">
+                        <div class="avatar avatar-sm nav-profile-height">
+                            <img class="img-rnd img-resp" src="/images/avatar_2.jpg" alt="avatar img">
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </ul>
+
+            <!-- hamburger menu -->
+            <div class="hamburger">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </div>
+
+            <div id="mySidepanel" class="sidepanel">
+                <div class="inner-div">
+                    <div class="cart-subsection">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><br><br><br>
+                        <div class="cart-summary-container">
+                            <div class="cart-summary-desc-container">
+                                <div class="cart-summary-desc-item-container">
+                                    <p class="para-rg">Items:</p>
+                                    <p class="para-rg">2</p>
+                                </div>
+                                <div class="cart-summary-desc-total-container">
+                                    <p class="gray-text para-rg">TOTAL:</p>
+                                    <p class="bold para-rg text-bold-weight">₹4898</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-list-container">
+                            <div class="cart-item-main-container">
+                                <div class="cart-item-container">
+                                    <div class="cart-item-details-container df">
+                                        <div class="item-image-section">
+                                            <div class="cart-item-image-container">
+                                                <img src="https://apex-assets.mivi.in/cdn-cgi/image/width=400,quality=75,f=auto,fit=contain/m0bfb/15da9mhdxz1o9s314i70lmdp374r"
+                                                    alt="duopodsm80">
+                                            </div>
+                                        </div>
+                                        <div class="item-desc-container">
+                                            <div class="product-description">
+                                                <h6 class="product-name para-lg">DuoPods M80</h6>
+                                            </div>
+                                            <div class="price-details">
+                                                <div class="text-regular-weight para-lg">
+                                                    Rs.2999
+                                                    <br>
+                                                    <span class="text-light-weight para-rg"><span
+                                                            class="text-strike-through para-rg">Rs.5999 </span><span
+                                                            class="primary-text-color para-rg">(50% OFF)</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-quantity-container df item-align justify-between">
+                                        <div class="remove-item-container df">
+                                            <button class="btn flex-items btn-text-icon-primary">
+                                                <span class="material-icons">delete</span></button>
+
+                                        </div>
+                                        <div class="cart-item-value-container">
+                                            <button class="btn btn-outline-primary minus-icon">
+                                                <span class="material-icons">remove</span>
+                                            </button>
+                                            <div class="quantity-count para-rg">1</div>
+                                            <button class="btn btn-outline-primary plus-icon">
+                                                <span class="material-icons">add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-item-main-container">
+                                <div class="cart-item-container">
+                                    <div class="cart-item-details-container df">
+                                        <div class="item-image-section">
+                                            <div class="cart-item-image-container">
+                                                <img src="https://apex-assets.mivi.in/cdn-cgi/image/width=400,quality=75,f=auto,fit=contain/m0bfb/pvla0j9lerjn3dybfclivd34wkzb"
+                                                    alt="octave">
+                                            </div>
+                                        </div>
+                                        <div class="item-desc-container">
+                                            <div class="product-description">
+                                                <h6 class="product-name para-lg">Octave</h6>
+                                            </div>
+                                            <div class="price-details">
+                                                <div class="text-regular-weight para-lg">
+                                                    Rs.1799 <br>
+                                                    <span class="text-light-weight para-rg"><span
+                                                            class="text-strike-through para-rg">Rs.3999 </span><span
+                                                            class="primary-text-color para-rg">(50% OFF)</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-quantity-container df item-align justify-between">
+                                        <div class="remove-item-container df">
+                                            <button class="btn flex-items btn-text-icon-primary"><span
+                                                    class="material-icons">delete</span></button>
+
+                                        </div>
+                                        <div class="cart-item-value-container">
+                                            <button class="btn btn-outline-primary minus-icon">
+                                                <span class="material-icons">remove</span>
+                                            </button>
+                                            <div class="quantity-count para-rg">1</div>
+                                            <button class="btn btn-outline-primary plus-icon">
+                                                <span class="material-icons">add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="features-container">
+                                <div class="shipping df flex-column">
+                                    <h6>Free Shipping</h6>
+                                    <p>Read our Standard Shipping Policies</p>
+                                </div>
+                                <br>
+                                <div class="feature-divider">
+                                    <p></p>
+                                </div>
+                                <br>
+                                <div class="return">
+                                    <h6>Free and Easy Returns</h6>
+                                    <p>Read our Standard Shipping Policies</p>
+                                </div>
+                            </div>
+                            <div class="cart-amount-details df flex-column">
+                                <div class="summary">
+                                    <p class="para-md">ORDER SUMMARY</p>
+                                </div>
+                                <div class="summary-divider"></div>
+                                <div class="price-break-up df flex-column">
+                                    <div class="subtotal-container df justify-between">
+                                        <p class="para-md">Subtotal</p>
+                                        <p class="para-md bold">Rs.4898</p>
+                                    </div>
+                                    <div class="shipping-container df justify-between">
+                                        <p class="para-md">Shipping</p>
+                                        <p class="para-md green">FREE</p>
+                                    </div>
+                                </div>
+                                <div class="summary-divider"></div>
+                                <div class="total-container df justify-between">
+                                    <p>Total</p>
+                                    <p>Rs.4898</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-button-container">
+                            <button class="btn btn-solid-primary">Checkout</button>
+                        </div>
+                    </div>
+
+                </div>
+
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="secondary-navbar">
+            <ul class="secondary-nav">
+                <li class="secondary-nav-item">
+                    <a href="#header" class="para-rg text-underline text-bold-weight">Home</a>
+                </li>
+                <li class="secondary-nav-item">
+                    <a href="#header" class="para-rg">Shop</a>
+                </li>
+                <li class="secondary-nav-item">
+                    <a href="" class="para-rg">Gifting</a>
+                </li>
+                <li class="secondary-nav-item">
+                    <a href="" class="para-rg">Offer Zone</a>
+                </li>
+                <li class="secondary-nav-item">
+                    <a href="" class="para-rg">About</a>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+
+        <script src="./script.js"></script>
+        <script src="../../"></script>
+    </main>
+
+</body>
+
+</html>
